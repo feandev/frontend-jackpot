@@ -1,0 +1,22 @@
+$font-main: 'Poppins', Arial, sans-serif;
+$font-second: 'Montserrat', Arial, sans-serif;
+$font-size: 1.2rem;
+$font-size-mobile: 1rem;
+$line-height: 1.2;
+$line-height-mobile: 1.2;
+
+$main-color: #000;
+$second-color: #CB1F1F;
+
+$tablet: 1199px;
+$mobile: 768px;
+
+body {
+  font-family: $font-main;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

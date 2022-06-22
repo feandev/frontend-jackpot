@@ -1,0 +1,19 @@
+.title {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #000, #000FFF );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game {
+  padding: 40px 0;
+  display: flex;
+
+  &__box {
+    border: 10px solid #000;
+    margin: 10px;
+  }
+}

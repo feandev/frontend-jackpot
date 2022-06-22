@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frontend Jackpot</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Frontend Jackpot</h1>
+    <section class="game">
+      <div class="game__box">
+        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
+      </div>
+      <div class="game__box">
+        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
+      </div>
+      <div class="game__box">
+        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
+      </div>
+    </section>
+    <section class="play">
+      <input type="number" placeholder="Enter bet" id="bet" class="play__input">
+      <button id="start" class="play__btn">Spin!</button>
+    </section>
+
+    <section class="panel">Money left: <span id="wallet" class="panel__wallet" ></span></section>
+
+    <section class="score">
+      <p><span id="result" class="score__result" ></span> </p>
+      <p>Total games:<span id="games" class="score__games" ></span></p>
+      <p>Games won: <span id="wins" class="score__wins" ></span></p>
+      <p>Games lost: <span id="losses" class="score__losses" ></span></p>
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>
