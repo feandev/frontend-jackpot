@@ -1,0 +1,4 @@
+@mixin black-border {
+    border: 10px solid $main-color;
+    border-radius: 10px;
+}

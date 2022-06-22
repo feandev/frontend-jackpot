@@ -3,17 +3,61 @@
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(to right, #000, #000FFF );
+  background: linear-gradient(to right, #000, $second-color, );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .game {
-  padding: 40px 0;
+  margin: 40px 0;
   display: flex;
+  @include black-border;
 
   &__box {
-    border: 10px solid #000;
-    margin: 10px;
+    border-right: 10px solid $main-color;
+  }
+
+  &__box.last {
+    border-right: none;
   }
 }
+
+
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wallet {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 40px;
+    background: #00204a;
+    color: #fdb44b;
+    text-transform: uppercase;
+    @include black-border;
+  }
+
+  &__input {
+    max-width: 30%;
+    font-size: 30px;
+    font-family: $font-main;
+    padding: 10px;
+    border: 4px solid #000;
+    margin: 0 20px;
+    @include black-border;
+  }
+
+  &__btn {
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 40px;
+    background: #00204a;
+    color: #fdb44b;
+    text-transform: uppercase;
+    @include black-border;
+    cursor: pointer;
+  }
+}
+

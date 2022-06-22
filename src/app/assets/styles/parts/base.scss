@@ -5,14 +5,17 @@ $font-size-mobile: 1rem;
 $line-height: 1.2;
 $line-height-mobile: 1.2;
 
-$main-color: #000;
-$second-color: #CB1F1F;
+$main-color: #00204a;
+$second-color: #fdb44b;
+$third-color: #005792;
+$bg-color: #00bbf0;;
 
 $tablet: 1199px;
 $mobile: 768px;
 
 body {
   font-family: $font-main;
+  background-color: $bg-color;
 }
 
 .container {
