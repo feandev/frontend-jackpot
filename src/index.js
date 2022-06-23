@@ -1,2 +1,2 @@
 import './app/app'
-import './app/assets/styles/index.scss'
+import './app/styles/index.sass'

@@ -1,0 +1,79 @@
+.title-bg 
+  background-color: $main-color
+  @include black-border
+  padding: 0 15px
+
+.title-txt 
+  font-size: 70px
+  font-weight: 900
+  text-align: center
+  text-transform: uppercase
+  background: linear-gradient(to right, #fff, $second-color, )
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  position: relative
+
+  &::before,&::after
+    position: absolute
+    content: ''
+    width: 70px
+    height: 70px
+    background-image: url('./../assets/img/star.png')
+    background-size: 70px
+    background-repeat: no-repeat
+    left: 0
+    top: 15px
+  
+  &::after
+    right: 0
+    left: auto
+
+    
+.game 
+  margin: 20px 0
+  display: flex
+  @include black-border
+
+  &__box
+    max-width: 410px
+    border-right: 10px solid $main-color
+    background: #fff
+  
+  &__box.last 
+    border-right: none
+  
+
+.play 
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__wallet 
+    font-size: 20px
+    font-weight: 900
+    padding: 10px 40px
+    background: #00204a
+    color: #fdb44b
+    text-transform: uppercase
+    @include black-border
+  
+  &__input 
+    max-width: 30%
+    font-size: 30px
+    font-family: $font-main
+    padding: 10px
+    border: 4px solid #000
+    margin: 0 20px
+    @include black-border
+  
+  &__btn 
+    font-size: 40px
+    font-weight: 900
+    padding: 10px 40px
+    background: #00204a
+    color: #fdb44b
+    text-transform: uppercase
+    @include black-border
+    cursor: pointer
+  
+
