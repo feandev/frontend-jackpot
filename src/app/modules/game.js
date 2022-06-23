@@ -33,9 +33,11 @@ export default class Game {
         this.spanWallet.textContent = money;
 
         if (result) {
-            result = `You won ${moneyWon} $`;
+            result = `+ ${moneyWon} $`;
+            this.spanResult.classList.remove('red-score')
         } else if (!result && result !== '') {
-            result = `You lost ${bet} $`;
+            result = `- ${bet} $`;
+            this.spanResult.classList.add('red-score')
         }
 
         this.spanResult.textContent = result;

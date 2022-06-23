@@ -9,13 +9,11 @@
 </head>
 
 <body>
-
   <div class="container">
     <div class="title-bg">
       <h1 class="title-txt">Frontend Jackpot</h1>
     </div>
-    
-    <section class="game">
+    <section class="game section">
       <div class="game__box">
         <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
       </div>
@@ -26,19 +24,33 @@
         <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
       </div>
     </section>
-    <section class="play">
-      <div class="play__wallet">Your Money: <span id="wallet" ></span></div>
-      <input type="number" placeholder="Enter bet" id="bet" class="play__input">
-      <div id="start" class="play__btn"> Spin!</div>
+    <section class="play section">
+      <div class="panel">
+        <div class="panel__el">Result: <span id="result" class="panel__val panel__val_result" ></span> </div>
+        <div class="panel__el">Money: <span id="wallet" class="panel__val" ></span></div>
+        <input type="number" placeholder="Enter bet" id="bet" class="panel__input">
+        <div id="start" class="panel__el panel__el_btn" > Play!</div>
+      </div>
     </section>
+    <section class="results section">
+      <div class="panel">
+        <div class="panel__el">Games won: <span id="wins" class="panel__val" ></span></div>
+        <div class="panel__el">Games lost: <span id="losses" class="panel__val" ></span></div>
+        <div class="panel__el">Total games:<span id="games" class="panel__val" ></span></div>
+      </div>
+    </section>
+    <sections class="goals section">
+      <div class="panel">
+        <div>Goals:</div>
+        <div>Junior: Win 500 $</div>
+        <div>Regular: Win 1000 $</div>
+        <div>Senior: Win 1500 $</div>
+      </div>
+    </sections>
 
 
-    <section class="score">
-      <p><span id="result" class="score__result" ></span> </p>
-      <p>Total games:<span id="games" class="score__games" ></span></p>
-      <p>Games won: <span id="wins" class="score__wins" ></span></p>
-      <p>Games lost: <span id="losses" class="score__losses" ></span></p>
-    </section>
+
+
 
   </div>
 
