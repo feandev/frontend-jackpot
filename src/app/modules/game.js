@@ -2,6 +2,7 @@ import Wallet from './wallet'
 import Result from './result'
 import Stats from './gameStats'
 import Draw from './draw'
+import Progress from './progress'
 import dolarImageSource from '../assets/img/dolar.png'
 
 export default class Game {
@@ -10,6 +11,7 @@ export default class Game {
         this.wallet = new Wallet(money);
         this.stats = new Stats();
         this.colors = new Draw();
+        this.progress = new Progress(500, 750, 1000)
         this.dolarImage = dolarImageSource;
 
         // bind to object game
@@ -69,6 +71,10 @@ export default class Game {
         this.stats.addResult(result, bet);
        
         this.render(colors, this.wallet.showWallet(), result, this.stats.checkStats(), bet, moneyWon );
+
+        let progress = this.progress.calculateProgress(this.wallet.showWallet());
+
+        console.log(progress)
 
     }
 }

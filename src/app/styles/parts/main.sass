@@ -9,9 +9,7 @@
   font-weight: 900
   text-align: center
   text-transform: uppercase
-  background: linear-gradient(to right, #fff, $second-color, )
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
+  @include gradient-txt
   position: relative
 
   &::before,&::after
@@ -86,7 +84,40 @@
     // animation: heartbeat 1.5s infinite
     margin: 0 0 0 10px
   
-  .goals 
+.goals
+  @include black-border
+  background-color: #fff
+  padding: 10px
+
+  &__title
+    font-size: 40px
+    font-weight: 700
+  
+  .goal
+    
+    &__number
+      display: flex
+      justify-content: space-between
+      padding: 10px 0
+
+      &_txt
+        font-size: 20px
+  
+  .bar
+    height: 30px
+    margin-bottom: 20px
+
+    &__inner
+      width: 40%
+      border-radius: 10px
+      padding: 10px
+      background: linear-gradient(to right, #fff, $second-color,)
+      display: flex
+      justify-content: end
+
+      &_money
+        font-weight: 700
+
 
 
 			
