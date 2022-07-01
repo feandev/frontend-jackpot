@@ -1,22 +1,19 @@
 export default class Progress {
 
-  constructor(junior, mid, senior) {
+  constructor(goals) {
 
-    this.goals = [this.junior = junior, this.mid = mid, this.senior = senior ]
+    this.goals = goals;
   }
 
   calculateProgress(wallet) {
 
-    let progresses = [];
+    let goalProgress = [];
 
     for (let i = 0; i < this.goals.length; i++) {
-      
-      const progress = Math.floor((wallet / this.goals[i]) * 100)
-
-      progresses.push(progress)
+      const goal = Math.floor((wallet / this.goals[i]) * 100);
+        goalProgress.push(goal);
     }
-
-    return progresses;
-
+    
+    return goalProgress;
   }
 }

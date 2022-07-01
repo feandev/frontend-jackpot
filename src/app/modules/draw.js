@@ -4,10 +4,7 @@ import jsImageSource from '../assets/img/3.jpg'
 
 export default class Draw {
   constructor() {
-    this.htmlImage = htmlImageSource;
-    this.cssImage = cssImageSource;
-    this.jsImage = jsImageSource;
-    this.options = [this.htmlImage, this.cssImage, this.jsImage];
+    this.options = [htmlImageSource, cssImageSource, jsImageSource];
     let _result = this.getImages();
     this.getResult = () => _result;
   }
