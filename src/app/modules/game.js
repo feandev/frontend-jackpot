@@ -46,7 +46,7 @@ export default class Game {
         this.spanGamesNumber.textContent = stats[0];
         this.spanWins.textContent = stats[1];
         this.spanLosses.textContent = stats[2];
-        this.input.textContent = '';
+        this.input.value = '';
         // display goals values
         this.goalsValue.forEach((val, index) => val.textContent = this.progress.goals[index])
         // display progress in width, if 100% goal is completed
@@ -54,7 +54,8 @@ export default class Game {
 
             if (progress[index] > 100) {
                 bar.classList.add('completed')
-                this.goalsText[index].textContent = 'COMPLETED!'
+                this.goalsText[index].textContent = 'COMPLETED!';
+                this.goalsText[index].classList.add('animation')
 
             } else {
                 bar.style.width = `${progress[index]}%`;

@@ -10,9 +10,9 @@
 
 <body>
   <div class="container">
-    <div class="title-bg">
-      <h1 class="title-txt">Frontend Jackpot</h1>
-    </div>
+    <header class="header">
+      <h1 class="header__txt">Frontend Jackpot</h1>
+    </header>
     <section class="game section">
       <div class="game__box">
         <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
@@ -26,66 +26,53 @@
     </section>
     <section class="play section">
       <div class="panel">
-        <div class="panel__el">Result: <span id="result" class="panel__val panel__val_result" ></span> </div>
-        <div class="panel__el">Money: <span id="wallet" class="panel__val" ></span></div>
+        <div class="panel__el">Result: <span id="result" class="panel__val panel__val-blue"></span> </div>
+        <div class="panel__el">Money: <span id="wallet" class="panel__val"></span></div>
         <input type="number" placeholder="Enter bet" id="bet" class="panel__input">
-        <div id="start" class="panel__el panel__el_btn" > Play!</div>
+        <div id="start" class="panel__el panel__el_btn"> Play!</div>
       </div>
     </section>
     <section class="results section">
       <div class="panel">
-        <div class="panel__el">Games won: <span id="wins" class="panel__val" ></span></div>
-        <div class="panel__el">Games lost: <span id="losses" class="panel__val" ></span></div>
-        <div class="panel__el">Total games:<span id="games" class="panel__val" ></span></div>
+        <div class="panel__el">Games won: <span id="wins" class="panel__val-blue"></span></div>
+        <div class="panel__el">Games lost: <span id="losses" class="panel__val red-score"></span></div>
+        <div class="panel__el">Total games:<span id="games" class="panel__val"></span></div>
       </div>
     </section>
     <section class="goals section">
       <p class="goals__title">GOALS</p>
-
-        <div class="goal">
-          <div>
-            <p class="goal__txt">GO JUNIOR - EARN <span class="goal__txt_value"></span></p>
-          </div>                
-            <p class="goal__txt goal__status">NOT COMPLETED</p>                   
+      <div class="goal">
+        <div>
+          <p class="goal__txt">junior - <span class="goal__txt_value"></span></p>
         </div>
-
-        <div class="bar">
-          <div class="bar__inner"></div>
-        </div>
-
-        <div class="goal">
-          <div>
-            <p class="goal__txt">GO MID - EARN <span class="goal__txt_value"></span></p>
-          </div>                
-            <p class="goal__txt goal__status">NOT COMPLETED</p>                   
-        </div>
-
-        <div class="bar">
-          <div class="bar__inner"></div>
-        </div>
-
-        <div class="goal">
-          <div>
-            <p class="goal__txt">GO SENIOR - EARN <span class="goal__txt_value"></span></p>
-          </div>                
-            <p class="goal__txt goal__status">NOT COMPLETED</p>                   
-        </div>
-
-        <div class="bar">
-          <div class="bar__inner"></div>
-        </div>
+        <p class="goal__txt goal__status">not completed</p>
       </div>
-
-
+      <div class="bar">
+        <div class="bar__inner"></div>
+      </div>
+      <div class="goal">
+        <div>
+          <p class="goal__txt">mid - <span class="goal__txt_value"></span></p>
+        </div>
+        <p class="goal__txt goal__status">not completed</p>
+      </div>
+      <div class="bar">
+        <div class="bar__inner"></div>
+      </div>
+      <div class="goal">
+        <div>
+          <p class="goal__txt">senior - <span class="goal__txt_value"></span></p>
+        </div>
+        <p class="goal__txt goal__status">not completed</p>
+      </div>
+      <div class="bar">
+        <div class="bar__inner"></div>
+      </div>
     </section>
-
-
-
-
-
+    <footer class="footer">
+      <p class="rules">game rules</p>
+    </footer>
   </div>
-
-
 </body>
 
 </html>
