@@ -1,5 +1,9 @@
+.container
+  max-width: 992px
+  padding: 0 20px
+  margin: 20px auto
+
 .header
-  margin-top: 20px
   background-color: $main-color
   @include black-border
   padding: 0 15px
@@ -26,7 +30,7 @@
     right: 0
     left: auto
 
-.game
+.draw
   margin: 20px 0
   display: flex
   @include black-border
@@ -103,13 +107,13 @@
 
     &__status.animation
       animation: heartbeat 500ms forwards
-    
+
   .bar
+    border: 2px solid #fff
     margin-bottom: 20px
 
     &__inner
       height: 20px
-      border-radius: 10px
       background: linear-gradient(to right, #fff, $second-color,)
       display: flex
       justify-content: end
@@ -117,13 +121,10 @@
     &__inner.completed
       width: 100% !important
       background: $third-color
-    
+
       &_money
         font-weight: 700
 
 .footer
 
-  .rules
-    text-align: center
-    position: relative
 

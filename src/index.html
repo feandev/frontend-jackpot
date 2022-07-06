@@ -9,70 +9,103 @@
 </head>
 
 <body>
+
   <div class="container">
-    <header class="header">
-      <h1 class="header__txt">Frontend Jackpot</h1>
-    </header>
-    <section class="game section">
-      <div class="game__box">
-        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
-      </div>
-      <div class="game__box">
-        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
-      </div>
-      <div class="game__box last">
-        <img src="./app/assets/img/dolar.png" alt="image" class="game__img">
-      </div>
-    </section>
-    <section class="play section">
-      <div class="panel">
-        <div class="panel__el">Result: <span id="result" class="panel__val panel__val-blue"></span> </div>
-        <div class="panel__el">Money: <span id="wallet" class="panel__val"></span></div>
-        <input type="number" placeholder="Enter bet" id="bet" class="panel__input">
-        <div id="start" class="panel__el panel__el_btn"> Play!</div>
-      </div>
-    </section>
-    <section class="results section">
-      <div class="panel">
-        <div class="panel__el">Games won: <span id="wins" class="panel__val-blue"></span></div>
-        <div class="panel__el">Games lost: <span id="losses" class="panel__val red-score"></span></div>
-        <div class="panel__el">Total games:<span id="games" class="panel__val"></span></div>
-      </div>
-    </section>
-    <section class="goals section">
-      <p class="goals__title">GOALS</p>
-      <div class="goal">
-        <div>
-          <p class="goal__txt">junior - <span class="goal__txt_value"></span></p>
+
+    <div class="game">
+      <header class="header">
+        <h1 class="header__txt">Frontend Jackpot</h1>
+      </header>
+      <section class="draw section">
+        <div class="draw__box">
+          <img src="./app/assets/img/dolar.png" alt="image" class="draw__img">
         </div>
-        <p class="goal__txt goal__status">not completed</p>
-      </div>
-      <div class="bar">
-        <div class="bar__inner"></div>
-      </div>
-      <div class="goal">
-        <div>
-          <p class="goal__txt">mid - <span class="goal__txt_value"></span></p>
+        <div class="draw__box">
+          <img src="./app/assets/img/dolar.png" alt="image" class="draw__img">
         </div>
-        <p class="goal__txt goal__status">not completed</p>
-      </div>
-      <div class="bar">
-        <div class="bar__inner"></div>
-      </div>
-      <div class="goal">
-        <div>
-          <p class="goal__txt">senior - <span class="goal__txt_value"></span></p>
+        <div class="draw__box last">
+          <img src="./app/assets/img/dolar.png" alt="image" class="draw__img">
         </div>
-        <p class="goal__txt goal__status">not completed</p>
-      </div>
-      <div class="bar">
-        <div class="bar__inner"></div>
+      </section>
+      <section class="play section">
+        <div class="panel">
+          <div class="panel__el">Result: <span id="result" class="panel__val panel__val-blue"></span> </div>
+          <div class="panel__el">Money: <span id="wallet" class="panel__val"></span></div>
+          <input type="number" placeholder="Enter bet" id="bet" class="panel__input">
+          <div id="start" class="panel__el panel__el_btn"> Play!</div>
+        </div>
+      </section>
+      <section class="results section">
+        <div class="panel">
+          <div class="panel__el">Games won: <span id="wins" class="panel__val-blue"></span></div>
+          <div class="panel__el">Games lost: <span id="losses" class="panel__val red-score"></span></div>
+          <div class="panel__el">Games:<span id="games" class="panel__val"></span></div>
+        </div>
+      </section>
+      <section class="goals section">
+        <p class="goals__title">GOALS</p>
+        <div class="goal">
+          <div>
+            <p class="goal__txt">junior - <span class="goal__txt_value"></span></p>
+          </div>
+          <p class="goal__txt goal__status">not completed</p>
+        </div>
+        <div class="bar">
+          <div class="bar__inner"></div>
+        </div>
+        <div class="goal">
+          <div>
+            <p class="goal__txt">mid - <span class="goal__txt_value"></span></p>
+          </div>
+          <p class="goal__txt goal__status">not completed</p>
+        </div>
+        <div class="bar">
+          <div class="bar__inner"></div>
+        </div>
+        <div class="goal">
+          <div>
+            <p class="goal__txt">senior - <span class="goal__txt_value"></span></p>
+          </div>
+          <p class="goal__txt goal__status">not completed</p>
+        </div>
+        <div class="bar">
+          <div class="bar__inner"></div>
+        </div>
+      </section>
+      <section class="rules">
+        <div class="rules__btn">Game rules</div>
+        <div class="rules__outer">
+          <div class="rules__exit">
+          </div> 
+          <div class="rules__inner">
+            <p class="rules__txt">all the same icons - you win</p>
+            <div>
+              <img src="./app/assets/img/3.jpg"  alt="img">
+              <img src="./app/assets/img/3.jpg"  alt="img">
+              <img src="./app/assets/img/3.jpg"  alt="img">
+            </div>
+            <p class="rules__txt">all different icons - you win</p>
+            <div>
+              <img src="./app/assets/img/1.jpg"  alt="img">
+              <img src="./app/assets/img/2.jpg"  alt="img">
+              <img src="./app/assets/img/3.jpg"  alt="img">
+            </div>
+            <p class="rules__txt">else - you lose</p>
+            <div>
+              <img src="./app/assets/img/1.jpg"  alt="img">
+              <img src="./app/assets/img/2.jpg"  alt="img">
+              <img src="./app/assets/img/2.jpg"  alt="img">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="footer">
-      <p class="rules">game rules</p>
-    </footer>
-  </div>
+    </div>
+
+
+  <footer class="footer">
+    <p class="footer__txt">https://github.com/feandev</p>
+  </footer>
 </body>
 
 </html>
