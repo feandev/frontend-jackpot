@@ -10,13 +10,13 @@ export default class Game {
 
         this.wallet = new Wallet(money);
         this.stats = new Stats();
-        this.colors = new Draw();
+        this.cards = new Draw();
         this.progress = new Progress(goals)
         this.dolarImage = dolarImageSource;
 
         // bind to object game
         document.getElementById('start').addEventListener('click', this.startGame.bind(this))
-        this.boards = document.querySelectorAll('.game__img');
+        this.boards = document.querySelectorAll('.draw__img');
         this.input = document.getElementById('bet');
         this.spanWallet = document.getElementById('wallet');
         this.spanResult = document.getElementById('result');
@@ -29,9 +29,9 @@ export default class Game {
         this.render();
     }
 
-    render(colors = [this.dolarImage, this.dolarImage, this.dolarImage], money = this.wallet.showWallet(), result = '', stats = [0, 0, 0], bet = 0, moneyWon = 0, progress = this.progress.calculateProgress(this.wallet.showWallet())) {
+    render(cards = [this.dolarImage, this.dolarImage, this.dolarImage], money = this.wallet.showWallet(), result = '', stats = [0, 0, 0], bet = 0, moneyWon = 0, progress = this.progress.calculateProgress(this.wallet.showWallet())) {
 
-        this.boards.forEach((board, index) => board.src = colors[index]);
+        this.boards.forEach((board, index) => board.src = cards[index]);
 
         this.spanWallet.textContent = money;
 
@@ -73,9 +73,9 @@ export default class Game {
 
         this.wallet.updateWallet(bet, '-');
 
-        const colors = this.colors.getImages();
+        const cards = this.cards.getImages();
 
-        const result = Result.checkWinner(colors);
+        const result = Result.checkWinner(cards);
 
         const moneyWon = Result.moneyWon(result, bet)
 
@@ -85,9 +85,6 @@ export default class Game {
 
         let progress = this.progress.calculateProgress(this.wallet.showWallet());
 
-        this.render(colors, this.wallet.showWallet(), result, this.stats.checkStats(), bet, moneyWon, progress);
-
-
-
+        this.render(cards, this.wallet.showWallet(), result, this.stats.checkStats(), bet, moneyWon, progress);
     }
 }

@@ -18,6 +18,10 @@ module.exports = {
           }
         }
       },
+      // {
+      //   test: /\.jpg$/,
+      //   loader: "url-loader?mimetype=image/jpg" 
+      // },
       {
         // any of these will match
         test: /\.(svg|png|jpg|jpeg|gif)$/,
